@@ -16,11 +16,10 @@ To run the project:
 .
 ├── .vscode/ - Visual Studio Code configuration files
 ├── backend/ - Backend App
+│ ├── models/ - Handles Mongoose Models
 │ ├── routes/ - Handles API calls for routes
 │ ├── scripts/ - scripts to publish
-│ ├── app.js - Adds middleware to the express server
-│ ├── constants.js - Defines the constants for the endpoints and port
-│ └── server.js - Configures Port and HTTP Server
+│ └── server.js - Configures Port and HTTP Server and Handles Middleware
 ├── frontend/ - Frontend App
 │ ├── public/ - public static files
 │ ├── scripts/ - scripts to publish
@@ -33,39 +32,17 @@ To run the project:
 
 ### Frontend
 
-The frontend is based on [create-react-app](https://github.com/facebook/create-react-app).
-
-The most important scripts in the `package.json` are:
-  - start: serves the frontend in development on http://localhost:3000/.
-  - build: Builds the app for production to the `build` folder.
-  - publish: Builds the app for production and moves the output to the `publish` folder.
-  - test: Launches the test runner in the interactive watch mode.
-
-To start the frontend application manually:
+To start the backend application manually:
   1. Open a terminal and navigate to the `frontend` folder path.
-  2. Use `yarn install` or `npm install` to install frontend dependencies.
-  3. Use `yarn start` or `npm start` to start frontend app in development.
+  2. Use `yarn install` or `npm install` to install backend dependencies.
+  3. Use `npm start` or `yarn start` to start frontend app in development.
 
 ### Backend
-
-The backend is based on [Express Generator](https://expressjs.com/en/starter/generator.html).
-
-The most important scripts in the `package.json` are:
-  - start: serves the backend in development on http://localhost:3001/.
-  - publish: copies the backend files to the `publish` folder.
 
 To start the backend application manually:
   1. Open a terminal and navigate to the `backend` folder path.
   2. Use `yarn install` or `npm install` to install backend dependencies.
-  3. Use `yarn start` or `npm start` to start backend app in development.
-
-## Deployment
-
-To deploy the application in an Azure App Service follow the deployment instructions:
-
-- [Deployment using Web Template Studio Deploy command](https://github.com/microsoft/WebTemplateStudio/blob/dev/docs/generated-apps/deployment.md)
-
-Consider adding authentication and securing backend API's by following [Azure App Service Security](https://docs.microsoft.com/en-us/azure/app-service/overview-security).
+  3. Use `node server` to start backend app in development.
 
 ## Additional Documentation
 
