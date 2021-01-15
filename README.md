@@ -1,3 +1,5 @@
+## Launching Application
+To start the application in development, follow the intructions to start the Frontend and Backend below
 
 ## File Structure
 ```
